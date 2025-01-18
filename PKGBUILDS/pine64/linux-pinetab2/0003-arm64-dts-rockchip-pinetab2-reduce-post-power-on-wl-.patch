@@ -1,0 +1,26 @@
+From 8cff28259f1b40606923a85e020d8d70593de879 Mon Sep 17 00:00:00 2001
+From: Piotr Zalewski <pZ010001011111@proton.me>
+Date: Sat, 30 Nov 2024 17:58:09 +0100
+Subject: [PATCH 3/4] arm64: dts: rockchip: pinetab2: reduce post power on wl
+ delay
+
+---
+ arch/arm64/boot/dts/rockchip/rk3566-pinetab2.dtsi | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/arch/arm64/boot/dts/rockchip/rk3566-pinetab2.dtsi b/arch/arm64/boot/dts/rockchip/rk3566-pinetab2.dtsi
+index 1bf686b9b169..9b6dd5cacac5 100644
+--- a/arch/arm64/boot/dts/rockchip/rk3566-pinetab2.dtsi
++++ b/arch/arm64/boot/dts/rockchip/rk3566-pinetab2.dtsi
+@@ -142,7 +142,7 @@ sdio_pwrseq: sdio-pwrseq {
+ 		pinctrl-names = "default";
+ 		pinctrl-0 = <&wifi_reset>;
+ 		reset-gpios = <&gpio3 RK_PD2 GPIO_ACTIVE_LOW>;
+-		post-power-on-delay-ms = <200>;
++		post-power-on-delay-ms = <15>;
+ 	};
+ 
+ 	speaker_amp: speaker-amplifier {
+-- 
+2.48.0
+
