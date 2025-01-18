@@ -64,6 +64,11 @@ prepare() {
       patch -Np1 < "../$src"
   done
 
+  patch -Np1 < "../../0001-rockchip-drm-vop2-add-support-for-gamma-LUT.patch"
+  patch -Np1 < "../../0002-arm64-dts-rockchip-pinetab2-add-control-pin-to-vcc-w.patch"
+  patch -Np1 < "../../0003-arm64-dts-rockchip-pinetab2-reduce-post-power-on-wl-.patch"
+  patch -Np1 < "../../0004-rockchip-drm-vop2-mv-color-mgmt-changed-check-out-of.patch"
+
   echo "Setting config..."
   cp ../config .config
   make olddefconfig
