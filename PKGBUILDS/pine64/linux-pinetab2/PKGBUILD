@@ -75,7 +75,7 @@ prepare() {
 
 build() {
   cd linux-${pkgver%.*}
-  make DTC_FLAGS="-@" all
+  make DTC_FLAGS="-@" ARCH=arm64 KCFLAGS="-O2 -pipe -march=armv8.2-a+crc+crypto -mtune=cortex-a55" all
   make -C tools/bpf/bpftool vmlinux.h feature-clang-bpf-co-re=1
 }
 
