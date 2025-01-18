@@ -41,7 +41,7 @@ b2sums=('2584e35822a429b6825bf8d99c073848d5ba83d45b382ab82d1caa36ccbf2529036b31d
         'SKIP'
         'ccafc526c352e7fa33dbeadf69be3f2f968d69e5d4651ded4a5baad0028336d0b146d53b79f9a2ce10aeccc7ab74b5d7fee40dc8a61f141da0e84d833ece1a4c'
         'SKIP'
-        'c101be21eed7db0db26fd139bcebd8484b323bb0fe428234104a91752f07e74142e260e37e6764c8abe59faee8bd480b46f2ab7905b51feb28bedefef7fd6d49')
+        'd9de7b3b9715e61f80376208477b006471a861c62a5da06fd89e95d12538df7cba9f62e7b51f6cc58d10f1d205ff985449a39b280ad975c251aeec3b46fab59a')
 
 export KBUILD_BUILD_HOST=archlinux
 export KBUILD_BUILD_USER=$pkgbase
